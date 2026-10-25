@@ -14,6 +14,10 @@
 @media(max-width:760px){.rage-meter{top:88px;padding:7px 10px;width:221px}.rage-meter kbd{display:none}.rage-meter b{font-size:6px}#rageFace{font-size:15px}#toast{top:153px}.touch-actions{right:12px;gap:7px;grid-template-columns:46px 52px 70px}.touch-actions button{width:47px;height:47px}.touch-actions #jump{width:52px;height:52px}.touch-actions #throw{width:70px;height:70px}#stick{left:15px;width:102px;height:102px}#stickKnob{left:27px;top:27px}#manual{left:15px;bottom:138px}.playing .board-status{padding:7px 10px}#trickFeedback{font-size:26px}}
 @media(max-height:620px) and (min-width:600px){.playing #bottomHud{bottom:14px;left:145px;right:220px}.rage-meter{top:90px;width:210px;padding:6px 9px}.rage-meter kbd{display:none}.rage-meter b{font-size:6px}#manual{bottom:120px;left:25px}#toast{top:145px}.touch-actions{bottom:15px}#stick{left:25px;width:94px;height:94px}#stickKnob{left:24px;top:24px}#trickFeedback{top:60%}}
 @media(prefers-reduced-motion:reduce){.rage-meter.ready{animation:none}#trickFeedback.pop{animation:trickPop .7s linear forwards}}
+
+/* Compact mobile rage meter, clear center view. */
+@media (pointer:coarse),(max-width:760px){.rage-meter{top:auto;bottom:161px;left:auto;right:12px;transform:none;width:178px;padding:6px 9px;gap:7px}.rage-meter b,.rage-meter kbd{display:none}.rage-meter small{font-size:7px}.rage-meter #rageFace{font-size:14px}.rage-meter .rage-track{margin-top:4px;height:4px}}
+@media (max-height:620px) and (min-width:600px){.rage-meter{top:auto;bottom:153px;left:auto;right:20px;transform:none;width:178px;padding:6px 9px}.rage-meter b,.rage-meter kbd{display:none}}
 </style></head>
 <body>
 <div id="app">
