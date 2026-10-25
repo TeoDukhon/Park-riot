@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"><meta name="theme-color" content="#172c31"><meta name="description" content="PARK RIOT — аркадный скейтпарк. Катание, трюки, умные соперники и летающий скейт. Играй в браузере и на Android."><title>PARK RIOT — Скейтпарк твой</title><link rel="icon" type="image/svg+xml" href="icon.svg"><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="app">
+<header><a class="brand" href="#" aria-label="Главное меню"><span class="brand-icon">↗</span><span>PARK<span class="orange">RIOT</span><small>SKATEPARK ARCADE</small></span></a><div class="header-center"><span class="live-dot"></span> CONCRETE CLUB <span class="sep">/</span> VOL. 01</div><div class="header-actions"><button id="sound" class="icon-btn" aria-label="Включить звук" title="Звук">♫<span class="offmark">×</span></button><button id="fullscreen" class="icon-btn" aria-label="На весь экран" title="На весь экран">⛶</button><button id="pause" class="icon-btn hidden" aria-label="Пауза">Ⅱ</button><button id="help" class="help-btn">Как играть <span>↗</span></button></div></header>
+<main id="arena"><canvas id="game" aria-label="Игровое поле скейтпарка"></canvas><div class="vignette"></div>
+<div id="home" class="home">
+<div class="eyebrow"><span></span> ТВОЙ ПАРК. ТВОИ ПРАВИЛА.</div><h1>MAKE<br>SOME<br><em>CHAOS.</em></h1><p class="intro">Скейтеры против самокатеров.<br>Лови момент. Запускай скейт.<br>Забирай скейтпарк.</p>
+<div class="home-settings"><button id="difficulty" class="setting" title="Изменить сложность">● <span>Уличный</span> <b>⌄</b></button><button id="mode" class="setting"><span>90 секунд</span> <b>⇄</b></button></div>
+<button id="start" class="primary">В ПАРК <span>↗</span></button><div class="best">ЛИЧНЫЙ РЕКОРД <strong id="homeBest">00</strong><span>падений</span></div>
+</div>
+<div id="parkStamp" class="park-stamp"><span>HAIFA / UNDERGROUND</span><b>NO BRAKES.<br>JUST STYLE.</b><small>01 — THE CONCRETE PLAYGROUND</small></div>
+<div id="hud" class="hidden"><div class="scorepanel"><div><span>ПАДЕНИЯ</span><b id="score">00</b></div><div class="scoredivider"></div><div><span>СТИЛЬ</span><strong id="style">0</strong></div></div><div id="timerWrap"><small id="roundLabel">СЕССИЯ / 01</small><strong id="timer">1:30</strong><div class="timebar"><i id="timebar"></i></div></div><div class="goal"><span>ЦЕЛЬ СЕССИИ</span><b id="goal">0 / 15</b><div id="goalDots"></div></div></div>
+<div id="combo" class="hidden"><b>×2</b><span>ЕЩЁ ОДИН!</span></div><div id="toast" role="status"></div>
+<div id="bottomHud" class="hidden"><div class="board-status"><span id="boardIcon">▰</span><div><small>ТВОЙ СКЕЙТ</small><b id="boardState">ГОТОВ К БРОСКУ</b></div><div class="charge"><i id="charge"></i></div></div><div class="energy-status"><small>ЭНЕРГИЯ РЫВКА</small><div><i id="energy"></i></div></div><div class="desktop-controls"><kbd>W A S D</kbd> кататься <kbd>ПРОБЕЛ</kbd> бросить <kbd>E</kbd> прыжок <kbd>SHIFT</kbd> рывок <kbd>R</kbd> вернуть</div></div>
+<div id="touchControls" class="hidden"><div id="stick"><div id="stickKnob"></div><span>ДВИЖЕНИЕ</span></div><div class="touch-actions"><button id="dash" aria-label="Рывок">↯<small>РЫВОК</small></button><button id="jump" aria-label="Прыжок">↑<small>ОЛЛИ</small></button><button id="throw" aria-label="Бросить или вернуть скейт">↗<small>БРОСОК</small></button></div></div>
+<div id="worldHint"><span class="live-dot"></span> ЖИВОЙ ПАРК <span>•</span> 3 ТИПА СОПЕРНИКОВ <span>•</span> НИКАКИХ ЗАГРУЗОК</div>
+</main>
+<footer><span>01 / CONCRETE SESSIONS</span><span>Катай. Бросай. Повторяй.</span><span>MADE FOR THE STREETS <i>↗</i></span></footer>
+</div>
+<div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><div id="modalContent"></div></div></div>
+<script src="engine.js"></script><script src="app.js"></script>
+</body></html>
